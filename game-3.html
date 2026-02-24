@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlay 365 - Science and Technology</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>EduPlay 365</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html"><i class="fas fa-star"></i> <span data-i18n="start_page">Welcome</span></a></li>
+                <li class="nav-section"><span data-i18n="games">Games</span></li>
+                <li><a href="index.html" class="active"><i class="fas fa-gamepad"></i> <span
+                            data-i18n="games">Games</span></a></li>
+                <li><a href="video-lessons.html"><i class="fas fa-video"></i> <span data-i18n="video_lessons">Video
+                            Lessons</span></a></li>
+                <li><a href="certificate.html"><i class="fas fa-certificate"></i> <span data-i18n="get_certificate">Get
+                            Certificate</span></a></li>
+                <li class="nav-section"><span data-i18n="login">Login</span></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> <span data-i18n="login">Login</span></a>
+                </li>
+                <li class="nav-section"><span data-i18n="more">More</span></li>
+                <li><a href="poems.html"><i class="fas fa-feather-alt"></i> <span data-i18n="poems">Poems</span></a>
+                </li>
+                <li><a href="documents.html"><i class="fas fa-file-alt"></i> <span
+                            data-i18n="documents">Documents</span></a></li>
+                <li class="nav-section"><span data-i18n="settings">Settings</span></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> <span data-i18n="settings">Settings</span></a>
+                </li>
+                <li><a href="help.html"><i class="fas fa-question-circle"></i> <span data-i18n="help">Help</span></a>
+                </li>
+                <li><a href="videos.html"><i class="fas fa-bookmark"></i> <span data-i18n="videos">Saved
+                            Videos</span></a></li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <div class="language-switcher">
+                <select id="lang-select"
+                    style="width: 100%; padding: 0.5rem; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 0.5rem;">
+                    <option value="uz">O'zbekcha</option>
+                    <option value="en" selected>English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="page-title">
+                <h1 data-i18n="geo_title">Ijtimoiy ko'nikma</h1>
+            </div>
+        </header>
+
+
+        <section class="video-grid">
+            <!-- Lesson 1: Emotions with Ms Rachel -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/vyWcl_1X6vM" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="geo_title">Ijtimoiy ko'nikma</span> - 1-dars:
+                        His-tuyg'ular</div>
+                    <div class="video-desc">Ms Rachel bilan turli his-tuyg'ularni aniqlash va ularni boshqarishni
+                        o'rganamiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Emotions & Feelings', 'His-tuyg\'ularni o\'rganish.', 'https://www.youtube.com/embed/vyWcl_1X6vM', 'assets/soc_1.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 2: Helping Friends - Daniel Tiger -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/0e1H47H7eI4" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="geo_title">Ijtimoiy ko'nikma</span> - 2-dars: Do'stlarga
+                        yordam</div>
+                    <div class="video-desc">Daniel Tiger bilan do'stlar bir-biriga qanday yordam berishini ko'ring.
+                    </div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Helping Friends', 'Do\'stlarga yordam berish.', 'https://www.youtube.com/embed/0e1H47H7eI4', 'assets/soc_2.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 3: Good Manners -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/58eO6-u_rIk" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="geo_title">Ijtimoiy ko'nikma</span> - 3-dars: Odob-axloq
+                    </div>
+                    <div class="video-desc">Salomlashish, rahmat aytish va boshqa muhim odob qoidalarini o'rganing.
+                    </div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Good Manners', 'Odob-axloq qoidalari.', 'https://www.youtube.com/embed/58eO6-u_rIk', 'assets/soc_3.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 4: Identifying Feelings -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/dOkyKyVFnOk" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="geo_title">Ijtimoiy ko'nikma</span> - 4-dars: Tuyg'ularni
+                        tushunish</div>
+                    <div class="video-desc">Turli vaziyatlarda insonlar o'zini qanday his qilishini tushunish darsi.
+                    </div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Understanding Feelings', 'Tuyg\'ularni aniqlash darsi.', 'https://www.youtube.com/embed/dOkyKyVFnOk', 'assets/soc_4.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 5: Power of Yet -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/XLeUvZvuvAs" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="geo_title">Ijtimoiy ko'nikma</span> - 5-dars: Harakatdan
+                        to'xtama</div>
+                    <div class="video-desc">Biror ishni hali qila olmasangiz ham, harakat qilishda davom eting!</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Power of Yet', 'Harakat qilish va sabr.', 'https://www.youtube.com/embed/XLeUvZvuvAs', 'assets/soc_5.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 6: Making Friends -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/k6W0N_qG9kY" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="geo_title">Ijtimoiy ko'nikma</span> - 6-dars: Do'stlashish
+                    </div>
+                    <div class="video-desc">Yangi do'stlar orttirish va ular bilan muloqot qilishning to'g'ri yo'llari.
+                    </div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Making Friends', 'Do\'stlashish ko\'nikmalari.', 'https://www.youtube.com/embed/k6W0N_qG9kY', 'assets/soc_6.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 7: Feelings Song -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/f_t-3Yn0qEc" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="geo_title">Ijtimoiy ko'nikma</span> - 7-dars: Tuyg'ular
+                        qo'shig'i</div>
+                    <div class="video-desc">Quvnoq qo'shiqlar orqali kun davomidagi kayfiyatimiz haqida gaplashamiz.
+                    </div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Feelings Song', 'His-tuyg\'ular qo\'shig\'i.', 'https://www.youtube.com/embed/f_t-3Yn0qEc', 'assets/soc_7.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 8: Taking Turns -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/_jE7W9V282M" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="geo_title">Ijtimoiy ko'nikma</span> - 8-dars: Navbat
+                        kutish</div>
+                    <div class="video-desc">O'yinchoqlar va o'yinlar paytida navbat bilan o'ynashni o'rganamiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Taking Turns', 'Navbat kutish darsi.', 'https://www.youtube.com/embed/_jE7W9V282M', 'assets/soc_8.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 9: Please & Thank You -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/JBN6_qK69-I" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="geo_title">Ijtimoiy ko'nikma</span> - 9-dars: Sehrli
+                        so'zlar</div>
+                    <div class="video-desc">"Iltimos" va "Rahmat" so'zlari nima uchun muhimligini ko'ring.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Magic Words', 'Iltimos va rahmat so\'zlari.', 'https://www.youtube.com/embed/JBN6_qK69-I', 'assets/soc_9.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 10: Sharing is Caring -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/JXN-P_C5X34" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="geo_title">Ijtimoiy ko'nikma</span> - 10-dars: Bo'lishish
+                    </div>
+                    <div class="video-desc">O'yinchoqlarni boshqalar bilan baham ko'rish qanchalik qiziqarli!</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Sharing Song', 'Bo\'lishish ko\'nikmasi.', 'https://www.youtube.com/embed/JXN-P_C5X34', 'assets/soc_10.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 11: Breathing Skills -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/jYvE2JjgNHM" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="geo_title">Ijtimoiy ko'nikma</span> - 11-dars: Tinchlanish
+                    </div>
+                    <div class="video-desc">G'azablanganda yoki xafa bo'lganda nafas mashqlari yordamida tinchlaning.
+                    </div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Breathing Skills', 'Tinchlanish mashqlari.', 'https://www.youtube.com/embed/jYvE2JjgNHM', 'assets/soc_11.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 12: Happy Face -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/l4WNrvVjiTw" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="geo_title">Ijtimoiy ko'nikma</span> - 12-dars: Tabassum
+                        qiling</div>
+                    <div class="video-desc">Tabassum qilish atrofimizdagilarga yaxshi kayfiyat ulashadi.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Happy Face', 'Tabassum va kayfiyat.', 'https://www.youtube.com/embed/l4WNrvVjiTw', 'assets/soc_12.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 13: Learning About Sharing -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/nwzgpE2ohGM" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="geo_title">Ijtimoiy ko'nikma</span> - 13-dars: Saxiylik
+                    </div>
+                    <div class="video-desc">Saxiy bo'lish va boshqalarga g'amxo'rlik qilish haqida dars.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Generosity', 'Saxiylik va g\'amxo\'rlik.', 'https://www.youtube.com/embed/nwzgpE2ohGM', 'assets/soc_13.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 14: Emotions Storybots -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/sH5PpGRbN6E" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="geo_title">Ijtimoiy ko'nikma</span> - 14-dars: Dunyoni
+                        tushunish</div>
+                    <div class="video-desc">Storybots bilan dunyoni va insoniy munosabatlarni qiziqarli o'rganing.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Understanding World', 'Storybots bilan o\'rganish.', 'https://www.youtube.com/embed/sH5PpGRbN6E', 'assets/soc_14.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 15: Table manners compilation -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/ECDyfLwkQDi" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="geo_title">Ijtimoiy ko'nikma</span> - 15-dars: Ovqatlanish
+                        odobi</div>
+                    <div class="video-desc">Dasturxon atrofida o'zini to'g'ri tutish va ovqatlanish qoidalarini
+                        o'rganing.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Eating Manners', 'Dasturxon odobi darsi.', 'https://www.youtube.com/embed/ECDyfLwkQDi', 'assets/soc_15.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Age Selection Modal -->
+    <div id="age-modal" class="age-modal">
+        <div class="age-modal-content">
+            <h2 data-i18n="age_select_title">Select Your Age</h2>
+            <div class="age-buttons">
+                <button class="age-button" onclick="selectAge('age_3_4')" data-i18n="age_3_4">3-4 years old</button>
+                <button class="age-button" onclick="selectAge('age_5_6')" data-i18n="age_5_6">5-6 years old</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

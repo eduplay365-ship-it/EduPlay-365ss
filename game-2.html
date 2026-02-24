@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlay 365 - Creative Thinking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>EduPlay 365</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html"><i class="fas fa-star"></i> <span data-i18n="start_page">Welcome</span></a></li>
+                <li class="nav-section"><span data-i18n="games">Games</span></li>
+                <li><a href="index.html" class="active"><i class="fas fa-gamepad"></i> <span
+                            data-i18n="games">Games</span></a></li>
+                <li><a href="video-lessons.html"><i class="fas fa-video"></i> <span data-i18n="video_lessons">Video
+                            Lessons</span></a></li>
+                <li><a href="certificate.html"><i class="fas fa-certificate"></i> <span data-i18n="get_certificate">Get
+                            Certificate</span></a></li>
+                <li class="nav-section"><span data-i18n="login">Login</span></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> <span data-i18n="login">Login</span></a>
+                </li>
+                <li class="nav-section"><span data-i18n="more">More</span></li>
+                <li><a href="poems.html"><i class="fas fa-feather-alt"></i> <span data-i18n="poems">Poems</span></a>
+                </li>
+                <li><a href="documents.html"><i class="fas fa-file-alt"></i> <span
+                            data-i18n="documents">Documents</span></a></li>
+                <li class="nav-section"><span data-i18n="settings">Settings</span></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> <span data-i18n="settings">Settings</span></a>
+                </li>
+                <li><a href="help.html"><i class="fas fa-question-circle"></i> <span data-i18n="help">Help</span></a>
+                </li>
+                <li><a href="videos.html"><i class="fas fa-bookmark"></i> <span data-i18n="videos">Saved
+                            Videos</span></a></li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <div class="language-switcher">
+                <select id="lang-select"
+                    style="width: 100%; padding: 0.5rem; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 0.5rem;">
+                    <option value="uz">O'zbekcha</option>
+                    <option value="en" selected>English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="page-title">
+                <h1 data-i18n="science_title">Til va nutq</h1>
+            </div>
+        </header>
+
+
+        <section class="video-grid">
+            <!-- Lesson 1: Phonics -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/6i-K6_O_v_Y" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="science_title">Til va nutq</span> - 1-dars: Fonika</div>
+                    <div class="video-desc">Harf tovushlarini va ularni birlashtirishni qiziqarli qo'shiqlar orqali
+                        o'rganing.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Phonics Song', 'Harf tovushlarini o\'rganish.', 'https://www.youtube.com/embed/6i-K6_O_v_Y', 'assets/lang_1.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 2: Alphabet -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/75p-N9YKqNo" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="science_title">Til va nutq</span> - 2-dars: Alifbo</div>
+                    <div class="video-desc">Alifboni tartib bilan va qiziqarli animatsiyalar yordamida eslab qoling.
+                    </div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Alphabet Fun', 'Alifboni o\'rganish.', 'https://www.youtube.com/embed/75p-N9YKqNo', 'assets/lang_2.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 3: Vowels -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VFa0b_IIRac" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="science_title">Til va nutq</span> - 3-dars: Unli tovushlar
+                    </div>
+                    <div class="video-desc">Unli tovushlarning talaffuzi va so'zlarda qo'llanilishini o'rganing.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Vowel Sounds', 'Unli tovushlar talaffuzi.', 'https://www.youtube.com/embed/VFa0b_IIRac', 'assets/lang_3.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 4: Letter B -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/XqZ-I0_hIeY" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="science_title">Til va nutq</span> - 4-dars: B harfi</div>
+                    <div class="video-desc">B harfi bilan boshlanadigan so'zlar va uning yozilishini o'rganamiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Letter B Fun', 'B harfi va so\'zlar.', 'https://www.youtube.com/embed/XqZ-I0_hIeY', 'assets/lang_4.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 5: Letter C -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/idexNu0SZpU" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="science_title">Til va nutq</span> - 5-dars: C harfi</div>
+                    <div class="video-desc">C harfining turli tovushlari va u bilan bog'liq so'zlarni o'rganing.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Letter C Fun', 'C harfi darsi.', 'https://www.youtube.com/embed/idexNu0SZpU', 'assets/lang_5.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 6: First Words -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/46v1z4q8l5U" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="science_title">Til va nutq</span> - 6-dars: Ilk so'zlar
+                    </div>
+                    <div class="video-desc">Kundalik hayotda eng ko'p ishlatiladigan sodda so'zlarni o'rganamiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('First Words', 'Kundalik so\'zlar o\'rganish.', 'https://www.youtube.com/embed/46v1z4q8l5U', 'assets/lang_6.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 7: Opposites -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/HGeuA4iJ8vI" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="science_title">Til va nutq</span> - 7-dars:
+                        Qarama-qarshiliklar</div>
+                    <div class="video-desc">Katta-kichik, issiq-sovuq kabi qarama-qarshi so'zlarni o'rganing.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Opposites Song', 'Antonim so\'zlar darsi.', 'https://www.youtube.com/embed/HGeuA4iJ8vI', 'assets/lang_7.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 8: Action Verbs -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/h09XpB_rKDM" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="science_title">Til va nutq</span> - 8-dars: Harakat
+                        fe'llari</div>
+                    <div class="video-desc">Yugurish, sakrash, yeyish kabi harakatni bildiruvchi so'zlar.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Action Verbs', 'Harakat fe\'llari o\'rganish.', 'https://www.youtube.com/embed/h09XpB_rKDM', 'assets/lang_8.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 9: Animal Sounds -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/t99ULJjCsaM" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="science_title">Til va nutq</span> - 9-dars: Hayvonlar
+                        tovushlari</div>
+                    <div class="video-desc">Turli hayvonlar qanday tovush chiqarishini va ularning nomlarini o'rganing.
+                    </div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Animal Sounds', 'Hayvonlar nomlari va tovushlari.', 'https://www.youtube.com/embed/t99ULJjCsaM', 'assets/lang_9.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 10: Reading Intro -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/K9m8vH9t1_Q" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="science_title">Til va nutq</span> - 10-dars: O'qishga
+                        kirish</div>
+                    <div class="video-desc">Bo'g'inlarni birlashtirish va ilk sodda so'zlarni o'qishni boshlang.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Reading Intro', 'Ilk o\'qish ko\'nikmalari.', 'https://www.youtube.com/embed/K9m8vH9t1_Q', 'assets/lang_10.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 11: Nouns Song -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/5_f-3Yn0qEc" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="science_title">Til va nutq</span> - 11-dars: Otlar (Narsa
+                        nomlari)</div>
+                    <div class="video-desc">Atrofimizdagi narsalar, odamlar va joylarning nomlarini o'rganing.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Nouns Song', 'Ot - narsa nomlari darsi.', 'https://www.youtube.com/embed/5_f-3Yn0qEc', 'assets/lang_11.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 12: Adjectives -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/36u9h6uN7vU" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="science_title">Til va nutq</span> - 12-dars: Sifatlar
+                        (Belgi bildiruvchi)</div>
+                    <div class="video-desc">Narsalarning rangi, shakli va xususiyatlarini tasvirlovchi so'zlar.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Adjectives', 'Sifat - belgi bildiruvchi so\'zlar.', 'https://www.youtube.com/embed/36u9h6uN7vU', 'assets/lang_12.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 13: Pronunciation -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/G1_CebAat7A" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="science_title">Til va nutq</span> - 13-dars: To'g'ri
+                        talaffuz</div>
+                    <div class="video-desc">Murakkabroq tovushlarni to'g'ri va aniq aytishni mashq qilamiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Pronunciation', 'Tovushlar talaffuzi mashqi.', 'https://www.youtube.com/embed/G1_CebAat7A', 'assets/lang_13.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 14: Story -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/v9K003eCId0" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="science_title">Til va nutq</span> - 14-dars: Hikoya
+                        vaertak</div>
+                    <div class="video-desc">Qiziqarli ertaklarni tinglang va lug'atingizni boyiting.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Fable Story', 'Ertaklar va hikoyalar tinglash.', 'https://www.youtube.com/embed/v9K003eCId0', 'assets/lang_14.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 15: Day Routine -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/o_9LRYqU6Dk" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="science_title">Til va nutq</span> - 15-dars: Mening kunim
+                    </div>
+                    <div class="video-desc">Kun davomida qiladigan ishlarimiz haqidagi so'zlarni o'rganing.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('My Day', 'Kun tartibi haqidagi so\'zlar.', 'https://www.youtube.com/embed/o_9LRYqU6Dk', 'assets/lang_15.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Age Selection Modal -->
+    <div id="age-modal" class="age-modal">
+        <div class="age-modal-content">
+            <h2 data-i18n="age_select_title">Select Your Age</h2>
+            <div class="age-buttons">
+                <button class="age-button" onclick="selectAge('age_3_4')" data-i18n="age_3_4">3-4 years old</button>
+                <button class="age-button" onclick="selectAge('age_5_6')" data-i18n="age_5_6">5-6 years old</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

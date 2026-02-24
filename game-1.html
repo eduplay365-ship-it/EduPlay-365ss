@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlay 365 - Logical Thinking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>EduPlay 365</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html"><i class="fas fa-star"></i> <span data-i18n="start_page">Welcome</span></a></li>
+                <li class="nav-section"><span data-i18n="games">Games</span></li>
+                <li><a href="index.html" class="active"><i class="fas fa-gamepad"></i> <span
+                            data-i18n="games">Games</span></a></li>
+                <li><a href="video-lessons.html"><i class="fas fa-video"></i> <span data-i18n="video_lessons">Video
+                            Lessons</span></a></li>
+                <li><a href="certificate.html"><i class="fas fa-certificate"></i> <span data-i18n="get_certificate">Get
+                            Certificate</span></a></li>
+                <li class="nav-section"><span data-i18n="login">Login</span></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> <span data-i18n="login">Login</span></a>
+                </li>
+                <li class="nav-section"><span data-i18n="more">More</span></li>
+                <li><a href="poems.html"><i class="fas fa-feather-alt"></i> <span data-i18n="poems">Poems</span></a>
+                </li>
+                <li><a href="documents.html"><i class="fas fa-file-alt"></i> <span
+                            data-i18n="documents">Documents</span></a></li>
+                <li class="nav-section"><span data-i18n="settings">Settings</span></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> <span data-i18n="settings">Settings</span></a>
+                </li>
+                <li><a href="help.html"><i class="fas fa-question-circle"></i> <span data-i18n="help">Help</span></a>
+                </li>
+                <li><a href="videos.html"><i class="fas fa-bookmark"></i> <span data-i18n="videos">Saved
+                            Videos</span></a></li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <div class="language-switcher">
+                <select id="lang-select"
+                    style="width: 100%; padding: 0.5rem; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 0.5rem;">
+                    <option value="uz">O'zbekcha</option>
+                    <option value="en" selected>English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="page-title">
+                <h1 data-i18n="math_title">Matematika</h1>
+            </div>
+        </header>
+
+        <section class="video-grid">
+            <!-- Lesson 1: Numbers & Counting -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/lFhE_tGzyzQ" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="math_title">Mathematics</span> - Lesson 1: Counting
+                    </div>
+                    <div class="video-desc">Learn numbers 1 to 10 with fun animated blocks. Perfect for early counting
+                        skills.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Counting Numbers 1-10', 'Early counting skills for preschool.', 'https://www.youtube.com/embed/lFhE_tGzyzQ', 'assets/math_1.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 2: Shapes -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/eVZfKuS36ZY" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="math_title">Mathematics</span> - Lesson 2: Shapes
+                    </div>
+                    <div class="video-desc">Identify circles, squares, and triangles in the world around us.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Learning Shapes', 'Identifying basic shapes.', 'https://www.youtube.com/embed/eVZfKuS36ZY', 'assets/math_2.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 3: Addition -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/UqY_NizR_fI" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="math_title">Mathematics</span> - Lesson 3: Simple
+                        Addition</div>
+                    <div class="video-desc">Introduction to basic addition concepts for older children.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Simple Addition', 'Basic math addition for 5-6 year olds.', 'https://www.youtube.com/embed/UqY_NizR_fI', 'assets/math_3.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 4: Logical Reasoning -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/m_QW_v7FhX4" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="math_title">Mathematics</span> - Lesson 4: Pattern
+                        Recognition</div>
+                    <div class="video-desc">Develop critical thinking by identifying patterns and sequences.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Patterns and Sequences', 'Logical pattern recognition training.', 'https://www.youtube.com/embed/m_QW_v7FhX4', 'assets/logic_1.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 5: Science - Animals -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/0G6L0I-f-X8" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="math_title">Mathematics</span> - Lesson 5: Animal
+                        World</div>
+                    <div class="video-desc">Discover different animals and their habitats in this nature lesson.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Animals & Habitats', 'Exploring the animal kingdom.', 'https://www.youtube.com/embed/0G6L0I-f-X8', 'assets/science_1.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 6: Creativity - Painting -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/7V-YOf8oVl0" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="math_title">Mathematics</span> - Lesson 6: Colors
+                        & Art</div>
+                    <div class="video-desc">Learn about primary colors and how to mix them for art.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Primary Colors', 'Artistic expression through color.', 'https://www.youtube.com/embed/7V-YOf8oVl0', 'assets/creative_1.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 7: Science - Space -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/M00Jb_T4_fI" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="math_title">Mathematics</span> - Lesson 7: The Solar
+                        System</div>
+                    <div class="video-desc">A journey through our neighborhood in space: planets and stars.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Solar System Tour', 'Planets and space exploration basics.', 'https://www.youtube.com/embed/M00Jb_T4_fI', 'assets/science_2.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 8: Math - Measurements -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/v3Hw0BOf-b8" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="math_title">Mathematics</span> - Lesson 8: Big and
+                        Small</div>
+                    <div class="video-desc">Understanding measurements, height, and weight through comparison.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Measurements for Kids', 'Big, small, tall, and short concepts.', 'https://www.youtube.com/embed/v3Hw0BOf-b8', 'assets/math_4.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 9: Logic - Problem Solving -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/D3_v7S0Xj7M" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="math_title">Mathematics</span> - Lesson 9: Matching
+                    </div>
+                    <div class="video-desc">Simple matching games to boost memory and focus.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Matching Games', 'Memory and focus training for toddlers.', 'https://www.youtube.com/embed/D3_v7S0Xj7M', 'assets/logic_2.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 10: Science - Plants -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/zPqE6Tmv-o0" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="math_title">Mathematics</span> - Lesson 10: How
+                        Plants Grow</div>
+                    <div class="video-desc">Learn about seeds, water, and sunlight in the life cycle of a plant.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Plant Life Cycle', 'Nature study and biology basics.', 'https://www.youtube.com/embed/zPqE6Tmv-o0', 'assets/science_3.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 11: Creativity - Music -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/_mZBaS_iMvA" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="math_title">Mathematics</span> - Lesson 11:
+                        Rhythm & Beats</div>
+                    <div class="video-desc">Clap along and learn the basics of musical rhythms.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Musical Rhythms', 'Exploring music and creative sounds.', 'https://www.youtube.com/embed/_mZBaS_iMvA', 'assets/creative_2.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 12: Math - Money -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/O85PstGpxIs" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="math_title">Mathematics</span> - Lesson 12: Intro to
+                        Coins</div>
+                    <div class="video-desc">Help children recognize basic coins and their values.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Learning Coins', 'Basic financial literacy for kids.', 'https://www.youtube.com/embed/O85PstGpxIs', 'assets/math_5.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 13: Science - Dinosaurs -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/G39v6S0oD2Q" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="math_title">Mathematics</span> - Lesson 13: Dinosaur
+                        World</div>
+                    <div class="video-desc">Explore the ancient world of dinosaurs!</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Dinosaur Discovery', 'Prehistoric life exploration.', 'https://www.youtube.com/embed/G39v6S0oD2Q', 'assets/science_4.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 14: Logic - Riddles -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/6i1r_UvY80U" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="math_title">Mathematics</span> - Lesson 14: Fun Riddles
+                    </div>
+                    <div class="video-desc">Challenge your brain with simple riddles for kids.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Kid Riddles', 'Problem-solving and critical thinking through riddles.', 'https://www.youtube.com/embed/6i1r_UvY80U', 'assets/logic_3.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 15: Creativity - Storytelling -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/nUOx7Oey8-o" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="math_title">Mathematics</span> - Lesson 15:
+                        Making Stories</div>
+                    <div class="video-desc">Use your imagination to create your own wonderful stories.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Storytelling Fun', 'Using imagination to create narratives.', 'https://www.youtube.com/embed/nUOx7Oey8-o', 'assets/creative_3.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Age Selection Modal -->
+    <div id="age-modal" class="age-modal">
+        <div class="age-modal-content">
+            <h2 data-i18n="age_select_title">Select Your Age</h2>
+            <div class="age-buttons">
+                <button class="age-button" onclick="selectAge('age_3_4')" data-i18n="age_3_4">3-4 years old</button>
+                <button class="age-button" onclick="selectAge('age_5_6')" data-i18n="age_5_6">5-6 years old</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

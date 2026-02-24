@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlay 365 - Logic Puzzles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>EduPlay 365</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html"><i class="fas fa-star"></i> <span data-i18n="start_page">Welcome</span></a></li>
+                <li class="nav-section"><span data-i18n="games">Games</span></li>
+                <li><a href="index.html" class="active"><i class="fas fa-gamepad"></i> <span
+                            data-i18n="games">Games</span></a></li>
+                <li><a href="video-lessons.html"><i class="fas fa-video"></i> <span data-i18n="video_lessons">Video
+                            Lessons</span></a></li>
+                <li><a href="certificate.html"><i class="fas fa-certificate"></i> <span data-i18n="get_certificate">Get
+                            Certificate</span></a></li>
+                <li class="nav-section"><span data-i18n="login">Login</span></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> <span data-i18n="login">Login</span></a>
+                </li>
+                <li class="nav-section"><span data-i18n="more">More</span></li>
+                <li><a href="poems.html"><i class="fas fa-feather-alt"></i> <span data-i18n="poems">Poems</span></a>
+                </li>
+                <li><a href="documents.html"><i class="fas fa-file-alt"></i> <span
+                            data-i18n="documents">Documents</span></a></li>
+                <li class="nav-section"><span data-i18n="settings">Settings</span></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> <span data-i18n="settings">Settings</span></a>
+                </li>
+                <li><a href="help.html"><i class="fas fa-question-circle"></i> <span data-i18n="help">Help</span></a>
+                </li>
+                <li><a href="videos.html"><i class="fas fa-bookmark"></i> <span data-i18n="videos">Saved
+                            Videos</span></a></li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <div class="language-switcher">
+                <select id="lang-select"
+                    style="width: 100%; padding: 0.5rem; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 0.5rem;">
+                    <option value="uz">O'zbekcha</option>
+                    <option value="en" selected>English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="page-title">
+                <h1 data-i18n="logic_title">Logic Puzzles</h1>
+            </div>
+        </header>
+
+
+        <section class="video-grid">
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/wO7iB70vG8g" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="logic_title">Mantiqiy fikrlash</span> - 1-dars: Naqshlar
+                        va ketma-ketliklar</div>
+                    <div class="video-desc">Ketma-ketliklarni tushunish va ularni davom ettirishni o'rganamiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Patterns & Sequences', 'Ketma-ketliklarni o\'rganish.', 'https://www.youtube.com/embed/wO7iB70vG8g', 'assets/log_1.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/H_Xk7nQy1mI" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="logic_title">Mantiqiy fikrlash</span> - 2-dars: Shakllar
+                        va naqshlar</div>
+                    <div class="video-desc">Turli shakllar yordamida mantiqiy naqshlar yaratishni o'rganamiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Patterns & Shapes', 'Shakllar bilan ishlash.', 'https://www.youtube.com/embed/H_Xk7nQy1mI', 'assets/log_2.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/iW9T0yR8XwQ" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="logic_title">Mantiqiy fikrlash</span> - 3-dars: Naqshlar
+                        saroyi</div>
+                    <div class="video-desc">Qiziqarli naqshlar dunyosiga sayohat va mantiqiy jumboqlar.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Pattern Palace', 'Naqshlar saroyi darsi.', 'https://www.youtube.com/embed/iW9T0yR8XwQ', 'assets/log_3.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/k_j_N6w2300" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="logic_title">Mantiqiy fikrlash</span> - 4-dars: Saralash
+                        va naqshlar</div>
+                    <div class="video-desc">Narsalarni guruhlash va mantiqiy tartiblashni o'rganamiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Sorting & Patterns', 'Saralash darsi.', 'https://www.youtube.com/embed/k_j_N6w2300', 'assets/log_4.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/vF200oX51xU" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="logic_title">Mantiqiy fikrlash</span> - 5-dars: Kodlarni
+                        ochish</div>
+                    <div class="video-desc">Mantiqiy jumboqlarni yechish va yashirin kodlarni topish.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Code Cracking', 'Jumboqlarni yechish.', 'https://www.youtube.com/embed/vF200oX51xU', 'assets/log_5.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/q_R6T2yU0wQ" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="logic_title">Mantiqiy fikrlash</span> - 6-dars: Tartib
+                        sonlar</div>
+                    <div class="video-desc">Narsalarning tartibini (birinchi, ikkinchi) tushunishni o'rganamiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Ordinal Numbers', 'Tartib sonlarni o\'rganish.', 'https://www.youtube.com/embed/q_R6T2yU0wQ', 'assets/log_6.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/_bN2M4jK7gU" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="logic_title">Mantiqiy fikrlash</span> - 7-dars:
+                        Naqshlarning naqshi</div>
+                    <div class="video-desc">Murakkabroq mantiqiy bog'liqliklar va naqshlarni o'rganish.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Pattern of Patterns', 'Murakkab naqshlar.', 'https://www.youtube.com/embed/_bN2M4jK7gU', 'assets/log_7.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/2Vd-25z4v2g" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="logic_title">Mantiqiy fikrlash</span> - 8-dars: Naqsh
+                        yaratish</div>
+                    <div class="video-desc">O'zimiz mustaqil ravishda yangi mantiqiy naqshlar yasaymiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Making Patterns', 'Mustaqil naqsh yaratish.', 'https://www.youtube.com/embed/2Vd-25z4v2g', 'assets/log_8.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/A_JjXzXhQ90" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="logic_title">Mantiqiy fikrlash</span> - 9-dars: Matematik
+                        naqshlar</div>
+                    <div class="video-desc">Sonlar va hisob-kitoblar bilan bog'liq mantiqiy jumboqlar.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Math Patterns', 'Matematik mantiq.', 'https://www.youtube.com/embed/A_JjXzXhQ90', 'assets/log_9.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/N7Q0yP1kC5g" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="logic_title">Mantiqiy fikrlash</span> - 10-dars: Qishki
+                        jumboqlar</div>
+                    <div class="video-desc">Qish mavzusidagi qiziqarli mantiqiy o'yinlar va jumboqlar.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Winter Puzzles', 'Mavsumiy jumboqlar.', 'https://www.youtube.com/embed/N7Q0yP1kC5g', 'assets/log_10.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/hA4y0Dq1i8k" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="logic_title">Mantiqiy fikrlash</span> - 11-dars: Bahorgi
+                        naqshlar</div>
+                    <div class="video-desc">Tabiatdagi o'zgarishlar va ketma-ketliklarni kuzatamiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Spring Patterns', 'Tabiatdagi mantiq.', 'https://www.youtube.com/embed/hA4y0Dq1i8k', 'assets/log_11.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/o_L_3kKkP0Y" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="logic_title">Mantiqiy fikrlash</span> - 12-dars: Mantiqiy
+                        ketma-ketlik</div>
+                    <div class="video-desc">Voqealar va sonlar tartibini mantiqan aniqlash darsi.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Logical Sequence', 'Ketma-ketlik darsi.', 'https://www.youtube.com/embed/o_L_3kKkP0Y', 'assets/log_12.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/rA3p8kZ2XwQ" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="logic_title">Mantiqiy fikrlash</span> - 13-dars: Qurilish
+                        bloklari</div>
+                    <div class="video-desc">Fazoviy fikrlash va mantiqiy qurilish asoslarini o'rganamiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Building Blocks', 'Qurilish mantiqi.', 'https://www.youtube.com/embed/rA3p8kZ2XwQ', 'assets/log_13.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/gY0T8yU2XwQ" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="logic_title">Mantiqiy fikrlash</span> - 14-dars: Barcha
+                        naqshlar</div>
+                    <div class="video-desc">Mantiqiy fikrlash bo'yicha eng yaxshi naqshlar to'plami.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Pattern Collection', 'Naqshlar to\'plami.', 'https://www.youtube.com/embed/gY0T8yU2XwQ', 'assets/log_14.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/vL5R9rW2L0Q" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="logic_title">Mantiqiy fikrlash</span> - 15-dars: Yozgi
+                        naqshlar</div>
+                    <div class="video-desc">Yozgi mavzumdagi qiziqarli mantiqiy mashg'ulotlar.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Summer Patterns', 'Yozgi mantiq.', 'https://www.youtube.com/embed/vL5R9rW2L0Q', 'assets/log_15.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Age Selection Modal -->
+    <div id="age-modal" class="age-modal">
+        <div class="age-modal-content">
+            <h2 data-i18n="age_select_title">Select Your Age</h2>
+            <div class="age-buttons">
+                <button class="age-button" onclick="selectAge('age_3_4')" data-i18n="age_3_4">3-4 years old</button>
+                <button class="age-button" onclick="selectAge('age_5_6')" data-i18n="age_5_6">5-6 years old</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

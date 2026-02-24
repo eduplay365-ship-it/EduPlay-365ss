@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlay 365 - Team and Communication</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>EduPlay 365</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html"><i class="fas fa-star"></i> <span data-i18n="start_page">Welcome</span></a></li>
+                <li class="nav-section"><span data-i18n="games">Games</span></li>
+                <li><a href="index.html" class="active"><i class="fas fa-gamepad"></i> <span
+                            data-i18n="games">Games</span></a></li>
+                <li><a href="video-lessons.html"><i class="fas fa-video"></i> <span data-i18n="video_lessons">Video
+                            Lessons</span></a></li>
+                <li><a href="certificate.html"><i class="fas fa-certificate"></i> <span data-i18n="get_certificate">Get
+                            Certificate</span></a></li>
+                <li class="nav-section"><span data-i18n="login">Login</span></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> <span data-i18n="login">Login</span></a>
+                </li>
+                <li class="nav-section"><span data-i18n="more">More</span></li>
+                <li><a href="poems.html"><i class="fas fa-feather-alt"></i> <span data-i18n="poems">Poems</span></a>
+                </li>
+                <li><a href="documents.html"><i class="fas fa-file-alt"></i> <span
+                            data-i18n="documents">Documents</span></a></li>
+                <li class="nav-section"><span data-i18n="settings">Settings</span></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> <span data-i18n="settings">Settings</span></a>
+                </li>
+                <li><a href="help.html"><i class="fas fa-question-circle"></i> <span data-i18n="help">Help</span></a>
+                </li>
+                <li><a href="videos.html"><i class="fas fa-bookmark"></i> <span data-i18n="videos">Saved
+                            Videos</span></a></li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <div class="language-switcher">
+                <select id="lang-select"
+                    style="width: 100%; padding: 0.5rem; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 0.5rem;">
+                    <option value="uz">O'zbekcha</option>
+                    <option value="en" selected>English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="page-title">
+                <h1 data-i18n="lit_title">Ijodiy fikrlash</h1>
+            </div>
+        </header>
+
+
+        <section class="video-grid">
+            <!-- Lesson 1: Rainbow Drawing -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/r09m6mC97EM" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="lit_title">Ijodiy fikrlash</span> - 1-dars: Kamalak
+                        chizish</div>
+                    <div class="video-desc">Oddiy shakllar yordamida chiroyli kamalak chizishni o'rganamiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Drawing Rainbow', 'Kamalak chizish darsi.', 'https://www.youtube.com/embed/r09m6mC97EM', 'assets/cre_1.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 2: Puppy Drawing -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/7awS9o8vO8A" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="lit_title">Ijodiy fikrlash</span> - 2-dars: Kuchukcha
+                        chizish</div>
+                    <div class="video-desc">Kichkintoylar uchun kuchukcha chizishning eng oson usuli.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Drawing Puppy', 'Kuchukcha chizish darsi.', 'https://www.youtube.com/embed/7awS9o8vO8A', 'assets/cre_2.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 3: Colors Song -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/SLl-gM00g8D" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="lit_title">Ijodiy fikrlash</span> - 3-dars: Ranglar
+                        qo'shig'i</div>
+                    <div class="video-desc">Ranglarni qo'shiq aytib va raqsga tushib o'rganamiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Colors Song', 'Ranglarni o\'rganish.', 'https://www.youtube.com/embed/SLl-gM00g8D', 'assets/cre_3.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 4: Blippi Drawing -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/a8zHhXq120g" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="lit_title">Ijodiy fikrlash</span> - 4-dars: Blippi bilan
+                        ijod</div>
+                    <div class="video-desc">Blippi bilan birga turli rasmlar chizishni mashq qilamiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Blippi Drawing', 'Blippi bilan chizish.', 'https://www.youtube.com/embed/a8zHhXq120g', 'assets/cre_4.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 5: StoryBots Painting -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/sH5PpGRbN6E" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="lit_title">Ijodiy fikrlash</span> - 5-dars: Bo'yoqlar siri
+                    </div>
+                    <div class="video-desc">Storybots bilan ranglar qanday aralashishini o'rganing.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Painting Secrets', 'Ranglar va bo\'yoqlar.', 'https://www.youtube.com/embed/sH5PpGRbN6E', 'assets/cre_5.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 6: Art & Craft -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/JXN-P_C5X34" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="lit_title">Ijodiy fikrlash</span> - 6-dars: Yasash va ijod
+                    </div>
+                    <div class="video-desc">Qog'ozdan turli shakllar va o'yinchoqlar yasashni o'rganing.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Art & Craft', 'Yasash va ijod darsi.', 'https://www.youtube.com/embed/JXN-P_C5X34', 'assets/cre_6.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 7: Imagination World -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/y_G-P_v-iO4" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="lit_title">Ijodiy fikrlash</span> - 7-dars: Tasavvur olami
+                    </div>
+                    <div class="video-desc">Keling, olis sayyoralarga xayolan sayohat qilamiz!</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Imagination World', 'Tasavvur olami darsi.', 'https://www.youtube.com/embed/y_G-P_v-iO4', 'assets/cre_7.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 8: Storytelling -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/40W39X-Xh8k" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="lit_title">Ijodiy fikrlash</span> - 8-dars: Hikoya aytish
+                    </div>
+                    <div class="video-desc">O'zingizning qiziqarli hikoyangizni to'qishni o'rganing.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Storytelling', 'Hikoya aytish darsi.', 'https://www.youtube.com/embed/40W39X-Xh8k', 'assets/cre_8.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 9: Painting Party -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/W3XW-Xh8K1g" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="lit_title">Ijodiy fikrlash</span> - 9-dars: Rasmlar
+                        bayrami</div>
+                    <div class="video-desc">Do'stlar bilan birgalikda rasm chizish qanchalik quvnoq!</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Painting Party', 'Rasmlar chizish darsi.', 'https://www.youtube.com/embed/W3XW-Xh8K1g', 'assets/cre_9.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 10: Creating Masterpiece -->
+            <div class="video-card" data-age="age_3_4">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/XLeUvZvuvAs" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="lit_title">Ijodiy fikrlash</span> - 10-dars: Shohona asar
+                    </div>
+                    <div class="video-desc">O'z qo'llaringiz bilan haqiqiy san'at asari yarating.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Masterpiece', 'San\'at asari yaratish.', 'https://www.youtube.com/embed/XLeUvZvuvAs', 'assets/cre_10.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 11: Creative Play -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/vyWcl_1X6vM" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="lit_title">Ijodiy fikrlash</span> - 11-dars: Ijodiy
+                        o'yinlar</div>
+                    <div class="video-desc">Ms Rachel bilan ijodiy va mantiqiy o'yinlar o'ynaymiz.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Creative Play', 'Ijodiy o\'yinlar darsi.', 'https://www.youtube.com/embed/vyWcl_1X6vM', 'assets/cre_11.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 12: Making Art with Daniel -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/0e1H47H7eI4" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="lit_title">Ijodiy fikrlash</span> - 12-dars: Daniel bilan
+                        ijod</div>
+                    <div class="video-desc">Daniel Tiger bilan birga turli narsalar yasashni ko'ring.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Art with Daniel', 'Yasash va ijod.', 'https://www.youtube.com/embed/0e1H47H7eI4', 'assets/cre_12.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 13: Bluey Creative -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/k6W0N_qG9kY" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="lit_title">Ijodiy fikrlash</span> - 13-dars: Bluey va
+                        xayolot</div>
+                    <div class="video-desc">Bluey bilan eng qiziqarli va ijodiy o'yinlarni kashf qiling.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Bluey Creative', 'Ijodiy o\'yinlar.', 'https://www.youtube.com/embed/k6W0N_qG9kY', 'assets/cre_13.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 14: Nature Art -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/v9i30yFJR6k" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="lit_title">Ijodiy fikrlash</span> - 14-dars: Tabiat
+                        san'ati</div>
+                    <div class="video-desc">Tabiatdagi barglar va toshlardan san'at asari yaratish darsi.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Nature Art', 'Tabiatda ijod qilish.', 'https://www.youtube.com/embed/v9i30yFJR6k', 'assets/cre_14.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 15: Khan Academy Drawing -->
+            <div class="video-card" data-age="age_5_6">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/1B_I1yWnScU" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title"><span data-i18n="lit_title">Ijodiy fikrlash</span> - 15-dars: Ranglar bilan
+                        ishlash</div>
+                    <div class="video-desc">Khan Academy bilan ranglarni tanlash va ularni uyg'unlashtirish.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Working with Colors', 'Ranglar darsi.', 'https://www.youtube.com/embed/1B_I1yWnScU', 'assets/cre_15.jpg')">
+                        <i class="fas fa-bookmark"></i> <span data-i18n="save_to_library">Save to Library</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Age Selection Modal -->
+    <div id="age-modal" class="age-modal">
+        <div class="age-modal-content">
+            <h2 data-i18n="age_select_title">Select Your Age</h2>
+            <div class="age-buttons">
+                <button class="age-button" onclick="selectAge('age_3_4')" data-i18n="age_3_4">3-4 years old</button>
+                <button class="age-button" onclick="selectAge('age_5_6')" data-i18n="age_5_6">5-6 years old</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
